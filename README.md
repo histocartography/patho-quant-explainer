@@ -6,8 +6,7 @@ The code mostly relies on the [`histocartography`](https://github.com/histocarto
 
 All the experiments are based on the BRACS dataset. The data needs to be downloaded separately (see Installation steps). 
 
-![Overview of the proposed approach.](https://ibm.box.com/shared/static/1rpx56csa79lops8b3469173mstm45nu.png
-)
+![Overview of the proposed approach.](figs/readme_fig1.png)
 
 
 ## Installation 
