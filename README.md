@@ -86,7 +86,7 @@ Note: The code will by default remove misclassified samples, it is also possible
 
 An example of attribute histograms would be:
 
-![Attribute-level histograms.](https://ibm.box.com/shared/static/87rfrbgri3ml0d5e2ipwr53pa0vihbd3.png)
+![Attribute-level histograms.](figs/readme_fig2.png)
 
 
 ### Disclaimer: 
