@@ -17,7 +17,7 @@ All the experiments are based on the BRACS dataset. The data needs to be downloa
 Clone the repo:
 
 ```
-git clone <> && cd quant-gnn-explainers
+git clone https://github.com/histocartography/patho-quant-explainer.git && cd patho-quant-explainer
 ```
 
 Create a conda environment and activate it:
