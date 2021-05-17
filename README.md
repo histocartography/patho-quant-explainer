@@ -6,8 +6,7 @@ The code mostly relies on the [`histocartography`](https://github.com/histocarto
 
 All the experiments are based on the BRACS dataset. The data needs to be downloaded separately (see Installation steps). 
 
-![Overview of the proposed approach.](https://ibm.box.com/shared/static/1rpx56csa79lops8b3469173mstm45nu.png
-)
+![Overview of the proposed approach.](figs/readme_fig1.png)
 
 
 ## Installation 
@@ -37,7 +36,7 @@ In order to download the BRACS dataset, you need to create an account [there](ht
 
 ## Running the code 
 
-The proposed approach for explainability of histology images is based on 3 steps: cell graph generation, post-hoc graph explaination to identify salient nodes and, quantitative analysis. 
+The approach for explainability of histology images is based on 3 steps: cell graph generation, post-hoc graph explaination to identify salient nodes and the proposed quantitative analysis. 
 
 ### Step 1: Cell graph generation 
 
@@ -48,11 +47,11 @@ cd core
 python generate_cell_graphs.py --data_path <PATH-TO-BRACS>/BRACS/test/ --save_path <SOME-SAVE-PATH>/quant-gnn-explainers-data
 ```
 
-The script will automatically create a directory containing a cell graph as a `.bin` file for each image. There should be 626 files created. 
+The script will automatically create a directory containing cell graphs as a `.bin` file for each image. There should be 626 files created. 
 
 ### Step 2: Explaining the cell graphs
 
-We benchmark 4 different explainers: GraphLRP, GNNExplainer, GraphGradCAM and GraphGradCAM++, that returns a different explanation, i.e., nuclei-level importance scores, for each cell graph. The system will automatically download a pre-trained checkpoint trained on 3-class BRACS. This model reaches 74% accuracy on the test set. 
+We benchmark 4 different explainers: GraphLRP, GNNExplainer, GraphGradCAM and GraphGradCAM++, that returns a different explanation, i.e., nuclei-level importance scores, for each cell graph. The system will automatically download a pre-trained checkpoint trained on 3-class BRACS using the `histocartography` library. This model reaches 74% accuracy on the test set. 
 
 Generating explanation with:
 
