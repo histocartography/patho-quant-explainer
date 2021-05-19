@@ -4,14 +4,14 @@ This repository includes the code for replicating results presented in the paper
 
 The code mostly relies on the [`histocartography`](https://github.com/histocartography/histocartography) library, a python-based package for modeling and learning with graph-based representations of pathology images. 
 
-All the experiments are based on the BRACS dataset. The data needs to be downloaded separately (see Installation steps). 
+All the experiments are based on the [`BRACS`](https://www.bracs.icar.cnr.it/) dataset. The data needs to be downloaded separately (see Installation steps). 
 
 ![Overview of the proposed approach.](figs/readme_fig1.png)
 
 
 ## Installation 
 
-### Cloning and handling ependencies 
+### Cloning and handling dependencies 
 
 Clone the repo:
 
@@ -32,7 +32,7 @@ Make sure that you have the latest version of histocartography, `histocartograph
 
 BRACS is a dataset of Hematoxylin and Eosin (H&E) histopathological images for automated detection/classification of breast tumors. BRACS includes >4k tumor regions-of-interest labeled in 7 categories (Normal, Benign, UDH, ADH, FEA, DCIS, Invasive). 
 
-In order to download the BRACS dataset, you need to create an account [there](https://www.bracs.icar.cnr.it/). Then, go to `Data Collection`, `Download`, and hit the `Regions of Interest Set` button to access the data. Download the `v1` data. The data are stored on an FTP server. 
+In order to download the BRACS dataset, you need to create an account [here](https://www.bracs.icar.cnr.it/). Then, go to `Data Collection`, `Download`, and hit the `Regions of Interest Set` button to access the data. Download the `v1` data. The data are stored on an FTP server. 
 
 ## Running the code 
 
@@ -72,7 +72,7 @@ python visualize_explanations --cell_graphs <SOME-SAVE-PATH>/quant-gnn-explainer
 
 ### Step 3: Quantifying explainers
 
-If you don't wanna re-generate all the cell graphs and explanations for the whole set, we provide a zip file that you can directly download [here](https://ibm.box.com/shared/static/412lfz992djt8u6bgu13y9cj9qsurwui.zip). This file contains pre-processed cell graphs and explanations. 
+If you don't want to re-generate all the cell graphs and explanations for the whole set, we provide a zip file that you can directly download [here](https://ibm.box.com/shared/static/412lfz992djt8u6bgu13y9cj9qsurwui.zip). This file contains pre-processed cell graphs and explanations. 
 
 To run the quantitative analysis, you can simply run:
 
